@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-labelledby="t">
+  <title id="t">増水した川と「川に近づかない」の注意看板、川から離れて避難する人のイラスト</title>
+  <defs><clipPath id="f"><rect width="600" height="340" rx="28"/></clipPath></defs>
+  <g clip-path="url(#f)">
+    <rect width="600" height="340" fill="#dcebf8"/>
+    <g fill="#c2d6ec"><ellipse cx="120" cy="50" rx="90" ry="28"/><ellipse cx="470" cy="40" rx="100" ry="26"/></g>
+    <g stroke="#9ab8d8" stroke-width="3" stroke-linecap="round"><path d="M60 90l-6 14M150 80l-6 14M260 70l-6 14M380 90l-6 14M500 80l-6 14M560 110l-6 14"/></g>
+    <!-- banks -->
+    <path d="M0 150 H600 V340 H0z" fill="#6aa37f"/>
+    <!-- river -->
+    <path d="M0 200 C150 180 250 230 400 205 S560 190 600 196 V300 C520 292 420 318 300 300 S100 296 0 306z" fill="#7b6a4a"/>
+    <path d="M0 212 C150 192 250 242 400 217 S560 202 600 208" stroke="#a79270" stroke-width="5" fill="none"/>
+    <g stroke="#b9a684" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M60 250 q15 -10 30 0 t30 0"/><path d="M220 262 q15 -10 30 0 t30 0"/><path d="M400 250 q15 -10 30 0 t30 0"/><path d="M500 275 q15 -10 30 0 t30 0"/>
+    </g>
+    <!-- water level gauge -->
+    <g transform="translate(120,150)">
+      <rect x="0" y="0" width="16" height="130" fill="#fff" stroke="#1d3a70" stroke-width="3"/>
+      <g stroke="#1d3a70" stroke-width="2"><path d="M0 20h10M0 40h10M0 60h10M0 80h10M0 100h10M0 120h10"/></g>
+      <rect x="3" y="48" width="10" height="80" fill="#d7263d" opacity=".75"/>
+    </g>
+    <!-- warning sign -->
+    <g transform="translate(300,40)">
+      <rect x="-5" y="70" width="10" height="100" fill="#6b6b6b"/>
+      <path d="M0 0 L62 104 H-62z" fill="#ffd23f" stroke="#1d1d1d" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="-6" y="34" width="12" height="40" rx="5" fill="#1d1d1d"/>
+      <circle cx="0" cy="88" r="7" fill="#1d1d1d"/>
+    </g>
+    <!-- person walking away to the right, with arrow -->
+    <g transform="translate(500,190) scale(.8)">
+      <rect x="-12" y="-40" width="9" height="40" rx="4" fill="#2d3e5e" transform="rotate(-12)"/>
+      <rect x="3" y="-40" width="9" height="40" rx="4" fill="#2d3e5e" transform="rotate(14)"/>
+      <rect x="-17" y="-88" width="34" height="52" rx="12" fill="#2f5fa8"/>
+      <circle cy="-104" r="15" fill="#f2c49b"/>
+      <path d="M-15 -106 a15 15 0 0 1 30 0 q-7 -7 -15 -5 q-8 -2 -15 5z" fill="#2e211a"/>
+      <circle cx="6" cy="-104" r="1.8" fill="#333"/>
+    </g>
+    <path d="M400 130 h60" stroke="#1e6fd9" stroke-width="8" stroke-linecap="round"/>
+    <path d="M452 116 l20 14 l-20 14z" fill="#1e6fd9"/>
+  </g>
+</svg>

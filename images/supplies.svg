@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="t">
+  <title id="t">家族4人分を想定した防災用品のイラスト（リュック、飲料水、非常食、懐中電灯、ラジオ、モバイルバッテリー、救急セット、トイレットペーパー）</title>
+  <defs><clipPath id="f"><rect width="600" height="300" rx="28"/></clipPath></defs>
+  <g clip-path="url(#f)">
+    <rect width="600" height="300" fill="#eaf3fc"/>
+    <rect y="230" width="600" height="70" fill="#d3e4f5"/>
+    <!-- backpack -->
+    <g transform="translate(90,110)">
+      <rect x="-50" y="0" width="100" height="130" rx="26" fill="#f28c28"/>
+      <rect x="-34" y="60" width="68" height="46" rx="12" fill="#e07310"/>
+      <path d="M-24 0 v-18 a24 24 0 0 1 48 0 v18" stroke="#b85c0a" stroke-width="8" fill="none"/>
+      <rect x="-14" y="24" width="28" height="18" rx="4" fill="#fff"/>
+      <path d="M0 27 v12 M-6 33 h12" stroke="#e0203a" stroke-width="4"/>
+    </g>
+    <!-- 4 water bottles -->
+    <g fill="#8cc6f5" stroke="#1e6fd9" stroke-width="3">
+      <rect x="170" y="140" width="30" height="92" rx="8"/><rect x="206" y="140" width="30" height="92" rx="8"/>
+      <rect x="242" y="140" width="30" height="92" rx="8"/><rect x="278" y="140" width="30" height="92" rx="8"/>
+    </g>
+    <g fill="#1e6fd9"><rect x="178" y="128" width="14" height="14" rx="3"/><rect x="214" y="128" width="14" height="14" rx="3"/><rect x="250" y="128" width="14" height="14" rx="3"/><rect x="286" y="128" width="14" height="14" rx="3"/></g>
+    <g fill="#fff" opacity=".8"><rect x="174" y="170" width="22" height="26"/><rect x="210" y="170" width="22" height="26"/><rect x="246" y="170" width="22" height="26"/><rect x="282" y="170" width="22" height="26"/></g>
+    <!-- cans (food) -->
+    <g>
+      <rect x="330" y="186" width="44" height="46" rx="6" fill="#c9d3df" stroke="#6b7a8f" stroke-width="3"/>
+      <rect x="380" y="186" width="44" height="46" rx="6" fill="#c9d3df" stroke="#6b7a8f" stroke-width="3"/>
+      <rect x="355" y="138" width="44" height="46" rx="6" fill="#c9d3df" stroke="#6b7a8f" stroke-width="3"/>
+      <g fill="#ffd23f"><rect x="334" y="200" width="36" height="16"/><rect x="384" y="200" width="36" height="16"/><rect x="359" y="152" width="36" height="16"/></g>
+    </g>
+    <!-- flashlight -->
+    <g transform="translate(450,210) rotate(-20)">
+      <rect x="0" y="0" width="70" height="22" rx="8" fill="#1d3a70"/>
+      <path d="M70 -6 h20 v34 h-20z" fill="#2f5fa8"/>
+      <path d="M92 -6 L140 -26 V48 L92 28z" fill="#ffe27a" opacity=".6"/>
+    </g>
+    <!-- radio -->
+    <g transform="translate(470,60)">
+      <rect x="0" y="20" width="96" height="60" rx="12" fill="#6b7a8f"/>
+      <path d="M76 20 L92 -8" stroke="#6b7a8f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="30" cy="50" r="18" fill="#3b4656"/>
+      <rect x="58" y="36" width="28" height="10" rx="3" fill="#bfe0ff"/>
+      <circle cx="72" cy="62" r="6" fill="#ffd23f"/>
+    </g>
+    <!-- mobile battery -->
+    <g transform="translate(340,62)">
+      <rect x="0" y="0" width="80" height="44" rx="10" fill="#34507e"/>
+      <rect x="10" y="12" width="44" height="20" rx="4" fill="#5bd18b"/>
+      <path d="M58 16 l-6 8 h8 l-6 8" stroke="#ffd23f" stroke-width="3" fill="none"/>
+    </g>
+    <!-- toilet paper -->
+    <g transform="translate(220,60)">
+      <rect x="0" y="0" width="60" height="56" rx="10" fill="#fff" stroke="#b6c3d3" stroke-width="3"/>
+      <ellipse cx="30" cy="4" rx="30" ry="10" fill="#f4f7fb" stroke="#b6c3d3" stroke-width="3"/>
+      <ellipse cx="30" cy="4" rx="9" ry="3" fill="#b6c3d3"/>
+    </g>
+  </g>
+</svg>

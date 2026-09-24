@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-labelledby="t">
+  <title id="t">雨雲と雷の下、傘をさして家の前に立つ家族（大人・子ども・高齢者）のイラスト</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#27528f"/>
+      <stop offset="1" stop-color="#6ea6db"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="600" height="380" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="600" height="380" fill="url(#sky)"/>
+    <!-- clouds -->
+    <g fill="#dde8f5">
+      <ellipse cx="130" cy="78" rx="82" ry="32"/><ellipse cx="185" cy="58" rx="58" ry="36"/><ellipse cx="78" cy="90" rx="52" ry="24"/>
+    </g>
+    <g fill="#c3d4ea">
+      <ellipse cx="445" cy="66" rx="92" ry="34"/><ellipse cx="505" cy="48" rx="58" ry="36"/><ellipse cx="380" cy="82" rx="56" ry="24"/>
+    </g>
+    <!-- lightning -->
+    <path d="M458 98 l-26 52 h24 l-18 48 l50 -68 h-26 l20 -32z" fill="#ffd23f" stroke="#f0a000" stroke-width="3" stroke-linejoin="round"/>
+    <!-- rain -->
+    <g stroke="#eaf2fc" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M40 130l-8 18M90 120l-8 18M140 140l-8 18M60 180l-8 18M200 120l-8 18M250 150l-8 18M310 110l-8 18M350 160l-8 18M400 130l-8 18M530 120l-8 18M570 160l-8 18M500 190l-8 18M20 220l-8 18M280 200l-8 18M560 230l-8 18M230 230l-8 18"/>
+    </g>
+    <!-- ground -->
+    <path d="M0 300 Q150 272 300 292 T600 282 V380 H0z" fill="#4c8a6a"/>
+    <path d="M0 330 Q200 312 380 328 T600 322 V380 H0z" fill="#3f7a5c"/>
+    <!-- house -->
+    <g transform="translate(48,176)">
+      <rect x="0" y="44" width="140" height="92" rx="4" fill="#f7f2e8"/>
+      <path d="M-14 50 L70 -10 L154 50z" fill="#1d3a70"/>
+      <rect x="56" y="80" width="30" height="56" rx="3" fill="#9a6843"/>
+      <rect x="14" y="66" width="28" height="26" rx="3" fill="#ffe7a1" stroke="#1d3a70" stroke-width="3"/>
+      <rect x="100" y="66" width="28" height="26" rx="3" fill="#ffe7a1" stroke="#1d3a70" stroke-width="3"/>
+    </g>
+    <!-- father with umbrella -->
+    <g transform="translate(300,318)">
+      <path d="M-4 -150 v60" stroke="#333" stroke-width="3"/>
+      <path d="M-60 -148 Q-4 -206 52 -148 Q38 -156 24 -148 Q10 -156 -4 -148 Q-18 -156 -32 -148 Q-46 -156 -60 -148z" fill="#1e6fd9"/>
+      <rect x="-11" y="-40" width="9" height="40" rx="4" fill="#2d3e5e"/><rect x="2" y="-40" width="9" height="40" rx="4" fill="#2d3e5e"/>
+      <rect x="-17" y="-88" width="34" height="52" rx="12" fill="#2f5fa8"/>
+      <path d="M12 -80 L0 -96" stroke="#f2c49b" stroke-width="7" stroke-linecap="round"/>
+      <circle cy="-104" r="15" fill="#f2c49b"/>
+      <path d="M-15 -106 a15 15 0 0 1 30 0 q-7 -7 -15 -5 q-8 -2 -15 5z" fill="#2e211a"/>
+      <circle cx="-5" cy="-104" r="1.8" fill="#333"/><circle cx="5" cy="-104" r="1.8" fill="#333"/>
+      <path d="M-5 -97 q5 4 10 0" stroke="#333" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- child in raincoat -->
+    <g transform="translate(352,318) scale(.66)">
+      <rect x="-11" y="-40" width="9" height="40" rx="4" fill="#1d3a70"/><rect x="2" y="-40" width="9" height="40" rx="4" fill="#1d3a70"/>
+      <path d="M-22 -36 L-16 -90 h32 L22 -36z" fill="#ffc62b"/>
+      <circle cy="-104" r="20" fill="#ffc62b"/>
+      <circle cy="-102" r="14" fill="#f5cfa9"/>
+      <circle cx="-5" cy="-103" r="2" fill="#333"/><circle cx="5" cy="-103" r="2" fill="#333"/>
+      <path d="M-5 -96 q5 4 10 0" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- mother with umbrella holding hand of grandmother -->
+    <g transform="translate(418,318)">
+      <path d="M2 -150 v60" stroke="#333" stroke-width="3"/>
+      <path d="M-52 -148 Q2 -204 56 -148 Q42 -156 29 -148 Q16 -156 2 -148 Q-12 -156 -25 -148 Q-38 -156 -52 -148z" fill="#f28c28"/>
+      <rect x="-11" y="-40" width="9" height="40" rx="4" fill="#3a3a52"/><rect x="2" y="-40" width="9" height="40" rx="4" fill="#3a3a52"/>
+      <rect x="-17" y="-88" width="34" height="52" rx="12" fill="#e86a7a"/>
+      <path d="M-18 -110 a18 18 0 0 1 36 0 v22 h-7 v-16 h-22 v16 h-7z" fill="#5a3825"/>
+      <path d="M8 -80 L3 -96" stroke="#f5d0ad" stroke-width="7" stroke-linecap="round"/>
+      <circle cy="-104" r="15" fill="#f5d0ad"/>
+      <path d="M-15 -108 a15 15 0 0 1 30 0 q-10 -4 -17 -10 q-4 8 -13 10z" fill="#5a3825"/>
+      <circle cx="-5" cy="-103" r="1.8" fill="#333"/><circle cx="5" cy="-103" r="1.8" fill="#333"/>
+      <path d="M-5 -96 q5 4 10 0" stroke="#333" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- grandmother with cane -->
+    <g transform="translate(486,318) scale(.9)">
+      <path d="M26 -58 v58" stroke="#7a5230" stroke-width="4" stroke-linecap="round"/>
+      <rect x="-11" y="-40" width="9" height="40" rx="4" fill="#4b4b5e"/><rect x="2" y="-40" width="9" height="40" rx="4" fill="#4b4b5e"/>
+      <rect x="-17" y="-86" width="34" height="52" rx="12" fill="#7a9e7e"/>
+      <path d="M12 -70 L26 -58" stroke="#f0cfb0" stroke-width="7" stroke-linecap="round"/>
+      <circle cy="-120" r="8" fill="#cfcfcf"/>
+      <circle cy="-102" r="15" fill="#f0cfb0"/>
+      <path d="M-15 -104 a15 15 0 0 1 30 0 q-15 -6 -30 0z" fill="#d7d7d7"/>
+      <path d="M-8 -102 h5 M3 -102 h5" stroke="#333" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M-5 -95 q5 4 10 0" stroke="#333" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- puddles -->
+    <g fill="#9cc6ef" opacity=".7">
+      <ellipse cx="240" cy="350" rx="40" ry="6"/><ellipse cx="540" cy="356" rx="36" ry="5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>その雨、大丈夫ですか？｜大雨・台風から命を守る｜大和冷機労働組合</title>
+  <meta name="description" content="ゲリラ雷雨・豪雨・台風から自分と家族の命を守るために。危険になる前に、知って、備えて、早めに行動しよう。大和冷機労働組合の防災啓発ページです。">
+  <meta name="theme-color" content="#123a6e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="その雨、大丈夫ですか？｜大雨・台風から命を守る">
+  <meta property="og:description" content="危険になってからでは遅い。知って、備えて、早めに行動しよう。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ アイコン（SVGスプライト） ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-flood" viewBox="0 0 24 24"><path d="M5 3l3 9M19 3l-3 9M12 3v2M12 8v2"/><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20.5c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/></symbol>
+    <symbol id="i-river" viewBox="0 0 24 24"><path d="M2 7c2 0 2-1.5 4-1.5S8 7 10 7s2-1.5 4-1.5S16 7 18 7s2-1.5 4-1.5M2 12.5c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 18c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M20 2v4" /></symbol>
+    <symbol id="i-drain" viewBox="0 0 24 24"><rect x="3" y="12" width="18" height="9" rx="2"/><path d="M7 12v9M11 12v9M15 12v9M19 12v9"/><path d="M12 2v7M9 5l3-3 3 3"/></symbol>
+    <symbol id="i-slide" viewBox="0 0 24 24"><path d="M2 21h20M2 21L9 5l4 7 3-3 6 12"/><circle cx="15" cy="16" r="1.5"/><circle cx="18" cy="13" r="1"/></symbol>
+    <symbol id="i-underpass" viewBox="0 0 24 24"><path d="M2 6h20M5 6v5M19 6v5"/><path d="M2 13c4 0 5 6 10 6s6-6 10-6"/><path d="M8 17h8"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M3 17v-4l2-5h14l2 5v4z"/><path d="M3 13h18"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/><path d="M3 3l18 18"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 10h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="13.5" r=".8"/><circle cx="15" cy="13.5" r=".8"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3L2 20.5h20z"/><path d="M12 9.5v5M12 17.5v.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+    <symbol id="i-broom" viewBox="0 0 24 24"><path d="M20 3l-8 8"/><path d="M12 11l-7 3 5 7 3-7z"/><path d="M8 16l2 2"/></symbol>
+    <symbol id="i-balcony" viewBox="0 0 24 24"><path d="M3 12h18M4 12v9M8 12v9M12 12v9M16 12v9M20 12v9M3 21h18"/><path d="M7 3h10v9"/><circle cx="17" cy="19" r="1.2"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="11" rx="2"/><path d="M8 23h8"/><path d="M12 1v6M9 4l3-3 3 3"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v4h4M9 11h7M9 15h7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 10.5v3"/><path d="M11 8.5l-2.5 4h4L10 16"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><path d="M2 12h20v3a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5z"/><path d="M5 12V5a2 2 0 0 1 4 0M6 20l-1 2M18 20l1 2"/></symbol>
+    <symbol id="i-light" viewBox="0 0 24 24"><path d="M8 10h8l-1 4v7H9v-7z"/><path d="M7 3h10v7H7z"/><path d="M12 16v2"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.5"/><path d="M5 6v12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6"/><path d="M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></symbol>
+    <symbol id="i-sandbag" viewBox="0 0 24 24"><rect x="2" y="14" width="9" height="6" rx="3"/><rect x="13" y="14" width="9" height="6" rx="3"/><rect x="7.5" y="8" width="9" height="6" rx="3"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 22v-7"/><path d="M12 2l6 8h-3l4 5H5l4-5H6z"/></symbol>
+    <symbol id="i-field" viewBox="0 0 24 24"><path d="M2 21h20"/><circle cx="12" cy="7" r="2"/><path d="M12 9v6M9 21l3-6 3 6M8 12h8"/><path d="M19 2l-2 4h2l-2 4"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 16c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2"/><path d="M2 20.5c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2"/><path d="M4 12c0-5 4-9 9-9-3 2-4 5-3 8"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20L9 7l4 6 2-3 7 10z"/><path d="M7 11l2 2 2-2"/></symbol>
+    <symbol id="i-rise" viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M12 13V3M8 7l4-4 4 4"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 14v7H3V5h7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M5 12l7 7 7-7"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3l2 3v14H8V8l2-3z"/><path d="M8 12h8v5H8"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="12" rx="2"/><circle cx="8" cy="15" r="3"/><path d="M14 13h5M14 17h5M17 9l3-6"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M9 9l6 6"/></symbol>
+    <symbol id="i-toilet" viewBox="0 0 24 24"><path d="M5 3h6v8H5z"/><path d="M3 11h18a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z"/><path d="M9 19l-1 3h8l-1-3"/></symbol>
+    <symbol id="i-towel" viewBox="0 0 24 24"><path d="M4 3h12a4 4 0 0 1 4 4v14H8V7a4 4 0 0 0-4-4z"/><path d="M4 3a4 4 0 0 0-4 4v2h8"/><path d="M8 17h12"/></symbol>
+    <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8 3l-6 4 3 4 2-1v11h10V10l2 1 3-4-6-4c0 2-1.5 3-4 3S8 5 8 3z"/></symbol>
+    <symbol id="i-yen" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M9 8l3 4 3-4M12 12v5M9.5 12.5h5M9.5 15h5"/></symbol>
+    <symbol id="i-soap" viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="13" rx="3"/><path d="M12 9V5M9 5h6M15 5l3-2"/><path d="M9 15h6"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 24 24"><path d="M9 8h6v12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/><path d="M10 8V6a2 2 0 0 1 4 0v2M9 12h3M9 16h3"/><path d="M12 2v2"/></symbol>
+    <symbol id="i-cane" viewBox="0 0 24 24"><circle cx="10" cy="4" r="2"/><path d="M10 6v7l-3 8M10 13l3 8M10 8l4 3"/><path d="M17 10a2 2 0 0 1 2 2v10"/><path d="M17 10a2 2 0 0 0-2 2"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16.5" rx="5" ry="4"/><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V3"/><path d="M5 4h12l-2 4 2 4H5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H16a3.5 3.5 0 0 0 0-7H8a3.5 3.5 0 0 1 0-7h7.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 4h16v12H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21V9l9-5 9 5v12"/><path d="M3 21h18M10 21v-5h4v5"/><circle cx="12" cy="10.5" r="2"/></symbol>
+    <symbol id="i-wheel" viewBox="0 0 24 24"><circle cx="10" cy="3.5" r="1.8"/><path d="M10 6v7h6l3 6"/><path d="M10 9h5"/><path d="M7 11a6 6 0 1 0 8 7"/></symbol>
+    <symbol id="i-walk" viewBox="0 0 24 24"><circle cx="13" cy="4" r="2"/><path d="M13 7l-2 6 3 3v6M11 13l-3 8M9 9l4-2 3 4h3"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14 3l7 7-3 3-7-7z"/><path d="M12.5 8.5L3 18l3 3 9.5-9.5"/></symbol>
+    <symbol id="i-belt" viewBox="0 0 24 24"><path d="M5 3l14 18"/><rect x="8" y="9" width="8" height="6" rx="1" transform="rotate(38 12 12)"/><path d="M19 3L5 21"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><path d="M4 20V9l6-5h10v16z"/><path d="M4 12h16"/><path d="M13 16v-3M11 14.5l2-2 2 2"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 17a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 9 4 4 0 0 1 18 17z"/><path d="M8 20l-1 2M12 20l-1 2M16 20l-1 2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-level" viewBox="0 0 24 24"><rect x="3" y="15" width="3" height="6"/><rect x="8" y="12" width="3" height="9"/><rect x="13" y="8" width="3" height="13"/><rect x="18" y="3" width="3" height="18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- ============ ヘッダー（固定） ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img class="logo-img" src="images/union-logo.webp" alt="" width="40" height="40">
+      <span class="brand-text">大和冷機<br class="br-sp">労働組合</span>
+    </a>
+    <a class="btn-kikikuru-head" href="https://www.jma.go.jp/jma/kishou/know/bosai/riskmap.html" target="_blank" rel="noopener">
+      <svg class="ic" aria-hidden="true"><use href="#i-level"/></svg>キキクルを見る<span class="sr-only">（気象庁サイトが新しいタブで開きます）</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="toc" id="menuBtn">
+      <svg class="ic ic-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="ic ic-close" aria-hidden="true"><use href="#i-close"/></svg>
+      <span class="menu-label">目次</span>
+    </button>
+  </div>
+  <nav class="toc" id="toc" aria-label="ページ内目次">
+    <ol class="toc-list">
+      <li><a href="#check"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>自宅周辺の危険</a></li>
+      <li><a href="#river"><svg class="ic" aria-hidden="true"><use href="#i-river"/></svg>河川・浸水</a></li>
+      <li><a href="#landslide"><svg class="ic" aria-hidden="true"><use href="#i-slide"/></svg>土砂災害</a></li>
+      <li><a href="#car"><svg class="ic" aria-hidden="true"><use href="#i-underpass"/></svg>車・アンダーパス</a></li>
+      <li><a href="#escape"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg>水没時の脱出</a></li>
+      <li><a href="#prepare"><svg class="ic" aria-hidden="true"><use href="#i-sandbag"/></svg>家庭の備え</a></li>
+      <li><a href="#evacuate"><svg class="ic" aria-hidden="true"><use href="#i-walk"/></svg>避難</a></li>
+      <li><a href="#info"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>防災情報</a></li>
+    </ol>
+  </nav>
+</header>
+<div class="toc-backdrop" id="tocBackdrop" hidden></div>
+
+<main id="main">
+
+<!-- ============ 1. ファーストビュー ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="rain" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="hero-org">
+        <img class="logo-img" src="images/union-logo.webp" alt="" width="52" height="52">
+        <span><small>組合員とご家族のための防災ページ</small>大和冷機労働組合</span>
+      </p>
+      <h1 id="hero-title" class="hero-title">その雨、<br>大丈夫ですか？</h1>
+      <p class="hero-sub">ゲリラ雷雨・豪雨・台風から<br>自分と家族の命を守るために</p>
+      <p class="hero-msg">危険になってからでは遅い。<br><strong>知って、備えて、早めに行動しよう。</strong></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#know">大雨から命を守るポイントを見る <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-kikikuru btn-lg" href="https://www.jma.go.jp/jma/kishou/know/bosai/riskmap.html" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-level"/></svg>今の危険度をキキクルで見る
+          <svg class="ic ic-sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">（気象庁サイトが新しいタブで開きます）</span>
+        </a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="images/hero.svg" alt="雨雲と雷の下、傘をさして家の前に立つ家族（お父さん、子ども、お母さん、おばあちゃん）のイラスト" width="600" height="380">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 2. まず知ってほしいこと ============ -->
+<section class="section" id="know" aria-labelledby="know-title">
+  <div class="container">
+    <p class="eyebrow">まず知ってほしいこと</p>
+    <h2 id="know-title" class="sec-title">大雨のとき、<br class="br-sp">“いつも大丈夫だから”は<br class="br-sp">通用しません</h2>
+    <ul class="card-grid card-grid-4">
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-flood"/></svg></span><p>短時間で道路が<b>冠水</b>する</p></li>
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-rise"/></svg></span><p>小さな川でも<b>急激に増水</b>する</p></li>
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-drain"/></svg></span><p>下水があふれ、<b>住宅街でも浸水</b>する</p></li>
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-slide"/></svg></span><p>山や崖から<b>突然土砂</b>が流れてくる</p></li>
+      <li class="card card-danger"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-underpass"/></svg></span><p><b>アンダーパス</b>が短時間で冠水する</p></li>
+      <li class="card card-danger"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg></span><p>車が水没し<b>脱出できなくなる</b></p></li>
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-power"/></svg></span><p><b>停電</b>や<b>断水</b>が起こる</p></li>
+      <li class="card"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-train"/></svg></span><p>電車などが止まり<b>帰宅できなくなる</b></p></li>
+    </ul>
+    <p class="key-msg">雨が強くなってからではなく、<br><em>雨が強くなる前の行動</em>が大切です。</p>
+  </div>
+</section>
+
+<!-- ============ 3. 自宅周辺の危険 ============ -->
+<section class="section section-tint" id="check" aria-labelledby="check-title">
+  <div class="container narrow">
+    <p class="eyebrow">自宅周辺の危険をチェック</p>
+    <h2 id="check-title" class="sec-title">あなたの家の周りは<br class="br-sp">大丈夫？</h2>
+    <p class="lead">当てはまるものにチェックしてみましょう。</p>
+    <fieldset class="checklist" id="riskChecklist">
+      <legend class="sr-only">自宅周辺の危険チェックリスト</legend>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>河川の近くに住んでいる</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>海岸や低い土地に住んでいる</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>自宅周辺に崖や急斜面がある</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>過去に道路が冠水した場所がある</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>地下・半地下の住宅や駐車場がある</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>自宅までの道路にアンダーパスがある</span></label>
+      <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>避難場所・避難経路を知らない</span></label>
+    </fieldset>
+    <div class="check-result" id="checkResult" aria-live="polite">
+      <p class="check-count" id="checkCount" hidden></p>
+      <p class="check-msg">ひとつでも当てはまる人は、<br><strong>自治体のハザードマップを確認しましょう。</strong></p>
+      <a class="btn btn-primary btn-lg btn-block" href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener">
+        <svg class="ic" aria-hidden="true"><use href="#i-map"/></svg>自分の地域のハザードマップを確認する
+        <svg class="ic ic-sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">（新しいタブで開きます）</span>
+      </a>
+      <p class="note">国土交通省「ハザードマップポータルサイト」が開きます。「わがまちハザードマップ」から、お住まいの市区町村のハザードマップを探せます。自治体のホームページでも確認できます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. 河川の近く ============ -->
+<section class="section" id="river" aria-labelledby="river-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-river"/></svg>河川の近くに住んでいる人</p>
+    <h2 id="river-title" class="sec-title"><span class="warn-mark" aria-hidden="true">!</span>川の様子を<br class="br-sp">見に行かない</h2>
+    <div class="split">
+      <figure class="illust"><img src="images/river.svg" alt="増水した茶色い川と黄色い注意看板。人が矢印の方向へ川から離れていくイラスト" width="600" height="340" loading="lazy"></figure>
+      <ul class="point-list">
+        <li>大雨のときは<b>川に近づかない</b></li>
+        <li>水位を<b>自分の目で確認しに行かない</b></li>
+        <li>上流の大雨で、<b>急に水位が上がる</b>ことがある（自分のいる場所で雨が降っていなくても）</li>
+        <li>避難情報が出る前でも、<b>危険を感じたら避難</b>する</li>
+        <li>夜に大雨が予想されるときは、<b>明るいうちの避難</b>を考える</li>
+        <li>避難するときは<b>川沿いの道路を使わない</b></li>
+      </ul>
+    </div>
+    <p class="key-msg key-warn">川を見に行かない。<br>早めに川から離れる。</p>
+  </div>
+</section>
+
+<!-- ============ 5. 海岸・低地 ============ -->
+<section class="section section-tint" id="coast" aria-labelledby="coast-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg>海岸・低い土地に住んでいる人</p>
+    <h2 id="coast-title" class="sec-title">海や低い土地では<br class="br-sp">浸水・高潮にも注意</h2>
+    <div class="split split-rev">
+      <figure class="illust"><img src="images/coast.svg" alt="高い波が寄せる海と低い土地の家。人と車が矢印の方向の高い場所へ移動しているイラスト" width="600" height="340" loading="lazy"></figure>
+      <ul class="point-list">
+        <li>台風が近づいたら<b>海岸に近づかない</b></li>
+        <li>高潮のおそれがあるときは<b>海岸から離れる</b></li>
+        <li>低い土地では<b>道路の冠水や床上浸水</b>に注意</li>
+        <li><b>地下室・地下駐車場・地下街へ行かない</b></li>
+        <li>大切な物や家電は、できれば<b>高い場所へ移動</b></li>
+        <li>車は<b>早めに安全な高い場所へ移動</b>する</li>
+      </ul>
+    </div>
+    <div class="alert alert-danger">
+      <svg class="ic alert-icon" aria-hidden="true"><use href="#i-warn"/></svg>
+      <div>
+        <p class="alert-title">危険が迫ってから、車を移動させない</p>
+        <p>雨や風が強くなってから車を動かしに外へ出るのは危険です。車の移動は「まだ大丈夫」なうちに済ませましょう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. 崖・山の近く ============ -->
+<section class="section" id="landslide" aria-labelledby="landslide-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg>崖・山の近くに住んでいる人</p>
+    <h2 id="landslide-title" class="sec-title">土砂災害は<br class="br-sp">突然起こります</h2>
+    <figure class="illust illust-wide"><img src="images/landslide.svg" alt="ひび割れ、落石、湧き水、傾いた木がある斜面と、その下の家。家族が矢印の方向へ斜面から離れていくイラスト" width="600" height="340" loading="lazy"></figure>
+    <h3 class="sub-title">こんな異変は危険のサイン</h3>
+    <ul class="sign-grid">
+      <li><span class="num">1</span>崖から<b>小石</b>が落ちてくる</li>
+      <li><span class="num">2</span>斜面から<b>水が湧き出す</b></li>
+      <li><span class="num">3</span>地面や崖に<b>ひび割れ</b>ができる</li>
+      <li><span class="num">4</span><b>木が傾く</b></li>
+      <li><span class="num">5</span><b>地鳴り</b>のような音がする</li>
+      <li><span class="num">6</span>川の水が<b>急に濁る</b></li>
+    </ul>
+    <div class="alert alert-caution">
+      <svg class="ic alert-icon" aria-hidden="true"><use href="#i-warn"/></svg>
+      <div>
+        <p class="alert-title">前兆がなく発生することもあります。</p>
+        <p>サインがないから安全、ではありません。自宅が<b>「土砂災害警戒区域」</b>に入っている場合は、ハザードマップで確認し、<b>早めに安全な場所へ避難</b>しましょう。</p>
+      </div>
+    </div>
+    <p class="key-msg key-warn">異変を確認しに行かない。<br>危険を感じたら斜面から離れる。</p>
+  </div>
+</section>
+
+<!-- ============ 7. 豪雨時の車の運転 ============ -->
+<section class="section section-car" id="car" aria-labelledby="car-title">
+  <div class="container">
+    <p class="eyebrow eyebrow-light"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg>豪雨のときの車の運転</p>
+    <h2 id="car-title" class="sec-title">豪雨のとき、<br>冠水道路には<br class="br-sp"><span class="hl-red">絶対に入らない</span></h2>
+    <figure class="illust illust-wide illust-car"><img src="images/underpass.svg" alt="線路の下をくぐるアンダーパスが冠水し、赤い×印が付いている。手前の車は止まって引き返しているイラスト" width="600" height="360" loading="lazy"></figure>
+    <div class="danger-card">
+      <svg class="ic" aria-hidden="true"><use href="#i-warn"/></svg>
+      <p>アンダーパス・高架下・<br class="br-sp">低い道路は特に危険</p>
+    </div>
+    <ul class="point-list point-list-light">
+      <li><b>冠水している道路には進入しない</b></li>
+      <li>水の深さを<b>見た目だけで判断しない</b></li>
+      <li><b>前の車が通れたからといって、自分も通れるとは限らない</b></li>
+      <li><b>アンダーパスには入らず、迂回</b>する</li>
+      <li><b>川沿い・海岸沿いの道路</b>を避ける</li>
+      <li>豪雨で前が見えにくいときは、<b>無理に走らない</b></li>
+      <li>危険を感じたら、<b>安全な場所に停車</b>する</li>
+    </ul>
+    <p class="mega-msg">「行けるかな？」<br>と思ったら、<br><span>行かない。</span></p>
+  </div>
+</section>
+
+<!-- ============ 8. 車が水没したら ============ -->
+<section class="section" id="escape" aria-labelledby="escape-title">
+  <div class="container narrow">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg>水没時の脱出</p>
+    <h2 id="escape-title" class="sec-title">もし車が水に<br class="br-sp">浸かってしまったら</h2>
+    <p class="key-msg key-danger key-sm">窓が開くうちに、<br>早く脱出することが最優先。</p>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-no">STEP<b>1</b></span>
+        <div class="step-body"><h3><svg class="ic" aria-hidden="true"><use href="#i-belt"/></svg>すぐに脱出を考える</h3><p>シートベルトを外す。</p></div>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP<b>2</b></span>
+        <div class="step-body"><h3><svg class="ic" aria-hidden="true"><use href="#i-window"/></svg>窓が開くうちに窓を開ける</h3><p>窓が開けば、窓から脱出する。</p></div>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP<b>3</b></span>
+        <div class="step-body"><h3><svg class="ic" aria-hidden="true"><use href="#i-hammer"/></svg>窓やドアが開かない場合</h3><p>緊急脱出用ハンマーで窓（サイドガラス）を割る。</p></div>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP<b>4</b></span>
+        <div class="step-body"><h3><svg class="ic" aria-hidden="true"><use href="#i-rise"/></svg>脱出したら車から離れる</h3><p>安全な高い場所へ移動する。</p></div>
+      </li>
+    </ol>
+    <div class="alert alert-caution">
+      <svg class="ic alert-icon" aria-hidden="true"><use href="#i-warn"/></svg>
+      <div>
+        <p class="alert-title">水圧でドアが開かなくなることがあります</p>
+        <p>車の外の水位が高くなると、水の圧力でドアはとても重くなります。また、電気系統が水に浸かると<b>パワーウィンドウが動かなくなる</b>おそれがあります。<br>車内に水が入り、車の内と外の水位の差が小さくなるとドアが開けやすくなる場合もありますが、それを待つのではなく、<b>窓が開く段階で早く脱出することが最優先</b>です。</p>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg class="ic" aria-hidden="true"><use href="#i-hammer"/></svg></div>
+      <div>
+        <h3>車内に緊急脱出用ハンマーを備えておこう</h3>
+        <p>運転席から手が届く場所に置いておきましょう。シートベルトカッター付きのものもあります。</p>
+        <p class="tool-note"><b>ご注意：</b>フロントガラスや、車種によってはサイドガラスにも<b>「合わせガラス」</b>など、脱出用ハンマーで割れにくいガラスが使われています。<b>自分の車のガラスの種類や、取扱説明書の脱出方法を事前に確認</b>しておきましょう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. 自宅の浸水対策 ============ -->
+<section class="section section-tint" id="prepare" aria-labelledby="prepare-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>自宅の浸水対策</p>
+    <h2 id="prepare-title" class="sec-title">大雨になる前に<br class="br-sp">できること</h2>
+    <ul class="icon-grid">
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-broom"/></svg></span>側溝や排水口を掃除する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-balcony"/></svg></span>ベランダの排水口を確認する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-tv"/></svg></span>家電や貴重品を高い位置へ移動する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span>重要書類を防水袋に入れる</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>スマートフォンを充電する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-battery"/></svg></span>モバイルバッテリーを充電する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-bath"/></svg></span>浴槽などに生活用水をためる</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-light"/></svg></span>停電に備えてライトを準備する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg></span>非常食と飲料水を確認する</li>
+      <li><span class="ig-icon"><svg class="ic" aria-hidden="true"><use href="#i-sandbag"/></svg></span>必要に応じて止水板や土のう等を準備する</li>
+    </ul>
+    <div class="alert alert-danger">
+      <svg class="ic alert-icon" aria-hidden="true"><use href="#i-warn"/></svg>
+      <div>
+        <p class="alert-title">大雨が始まってから、外で作業しない</p>
+        <p>雨が強くなってからの土のう積みや、側溝・排水口の掃除などの屋外作業は危険です。準備は<b>雨が降る前</b>に済ませましょう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. 雷 ============ -->
+<section class="section" id="thunder" aria-labelledby="thunder-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg>雷への対策</p>
+    <h2 id="thunder-title" class="sec-title">ゲリラ雷雨では<br class="br-sp">雷にも注意</h2>
+    <ul class="card-grid card-grid-5">
+      <li class="card card-caution"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span><p>雷鳴が聞こえたら<b>屋外での活動を中止</b></p></li>
+      <li class="card card-caution"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-tree"/></svg></span><p><b>木の下で雨宿りしない</b></p></li>
+      <li class="card card-caution"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-field"/></svg></span><p>グラウンドなど<b>開けた場所から離れる</b></p></li>
+      <li class="card card-caution"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg></span><p><b>建物や車の中へ避難</b>する</p></li>
+      <li class="card card-caution"><span class="card-icon"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg></span><p>川・海・プールなど<b>水辺から離れる</b></p></li>
+    </ul>
+    <p class="key-msg key-caution">まだ遠いと思わず、<br>雷の音が聞こえたら安全な場所へ。</p>
+  </div>
+</section>
+
+<!-- ============ 11. 停電・断水への備え ============ -->
+<section class="section section-tint" id="supplies" aria-labelledby="supplies-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-power"/></svg>停電・断水への備え</p>
+    <h2 id="supplies-title" class="sec-title">大雨のあとまで<br class="br-sp">考えて備えよう</h2>
+    <figure class="illust illust-wide"><img src="images/supplies.svg" alt="家族4人分をイメージした防災用品のイラスト。リュック、4本の飲料水、缶詰、懐中電灯、ラジオ、モバイルバッテリー、トイレットペーパー" width="600" height="300" loading="lazy"></figure>
+    <ul class="chip-grid">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-bottle"/></svg>飲料水</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg>非常食</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-light"/></svg>懐中電灯</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-battery"/></svg>モバイルバッテリー</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-radio"/></svg>携帯ラジオ</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-pill"/></svg>常備薬</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-toilet"/></svg>簡易トイレ</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-towel"/></svg>タオル</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-shirt"/></svg>着替え</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-yen"/></svg>現金（小銭も）</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-soap"/></svg>衛生用品</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-baby"/></svg>乳幼児用品</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-cane"/></svg>高齢者用品</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg>ペット用品</li>
+    </ul>
+    <p class="note-box"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span>必要な物は<b>家庭ごとに違います</b>。家族の人数や年齢、持病、ペットの有無などに合わせて準備しましょう。</span></p>
+  </div>
+</section>
+
+<!-- ============ 12. 家族で決めておこう ============ -->
+<section class="section" id="family" aria-labelledby="family-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>家族で決めておこう</p>
+    <h2 id="family-title" class="sec-title">離れているときに<br class="br-sp">災害が起きたら？</h2>
+    <div class="split">
+      <figure class="illust"><img src="images/family.svg" alt="おじいちゃん、お父さん、子ども、お母さん、おばあちゃん、犬がテーブルで地図を広げ「避難場所はここだね」と話し合っているイラスト" width="600" height="340" loading="lazy"></figure>
+      <div>
+        <h3 class="sub-title sub-title-left">家族で確認すること</h3>
+        <fieldset class="checklist checklist-compact" id="familyChecklist">
+          <legend class="sr-only">家族で確認することチェックリスト</legend>
+          <label class="check-item"><input type="checkbox" data-key="f1"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>避難場所</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f2"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>避難経路</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f3"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>連絡方法</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f4"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>家族が離れている場合の集合場所</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f5"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>子どもの学校・保育園の対応</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f6"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>高齢者・障がいのある人の避難方法</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f7"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>ペットの避難</span></label>
+          <label class="check-item"><input type="checkbox" data-key="f8"><span class="box" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span><span>車を使わない避難方法</span></label>
+        </fieldset>
+        <p class="note">※チェックの状態は、この端末のブラウザにだけ保存されます。</p>
+      </div>
+    </div>
+    <p class="key-msg">災害時は電話がつながりにくくなることもあります。<br><em>平常時に家族で決めておきましょう。</em></p>
+    <p class="note center">災害用伝言ダイヤル「171」や、各携帯電話会社の災害用伝言板の使い方も、家族で確認しておくと安心です。</p>
+  </div>
+</section>
+
+<!-- ============ 13. 最新情報を確認 ============ -->
+<section class="section section-info" id="info" aria-labelledby="info-title">
+  <div class="container">
+    <p class="eyebrow eyebrow-light"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>最新の防災情報</p>
+    <h2 id="info-title" class="sec-title">雨が降り始めたら<br class="br-sp">最新情報を確認</h2>
+    <p class="key-msg key-light">雨量だけではなく、<br><em>“自分のいる場所の危険度”</em>を見る。</p>
+
+    <div class="info-layout">
+      <div class="phone" role="group" aria-label="スマートフォンで確認する防災情報">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen">
+          <p class="phone-head">確認する情報</p>
+          <ul class="phone-list">
+            <li><a href="https://www.jma.go.jp/bosai/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg><span>気象庁の防災気象情報<small>警報・注意報など</small></span></a></li>
+            <li><a href="https://www.jma.go.jp/bosai/nowc/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-cloud"/></svg><span>雨雲の動き<small>1時間先までの雨の予想</small></span></a></li>
+            <li class="phone-kiki"><a href="https://www.jma.go.jp/jma/kishou/know/bosai/riskmap.html" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-level"/></svg><span>キキクル（危険度分布）<small>土砂・浸水・洪水の危険度を地図で表示</small></span></a>
+              <ul class="kiki-sub">
+                <li><b>土砂キキクル</b>土砂災害の危険度</li>
+                <li><b>浸水キキクル</b>短時間の強い雨による浸水の危険度</li>
+                <li><b>洪水キキクル</b>中小河川の洪水の危険度</li>
+              </ul>
+            </li>
+            <li><a href="https://www.river.go.jp/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-river"/></svg><span>河川水位情報<small>国土交通省「川の防災情報」</small></span></a></li>
+            <li><div class="phone-row"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>自治体の避難情報<small>市区町村のHP・防災メール・防災アプリ・テレビのデータ放送など</small></span></div></li>
+            <li><a href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-map"/></svg><span>ハザードマップ<small>国土交通省 ハザードマップポータルサイト</small></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-side">
+        <a class="btn btn-kikikuru btn-xl btn-block" href="https://www.jma.go.jp/jma/kishou/know/bosai/riskmap.html" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-level"/></svg>キキクルを見る
+          <svg class="ic ic-sm" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">（気象庁サイトが新しいタブで開きます）</span>
+        </a>
+        <div class="kiki-legend">
+          <p class="kl-title">キキクルの色の見方</p>
+          <ul>
+            <li><span class="kl kl-black" aria-hidden="true"></span><b>黒</b>：災害切迫（警戒レベル5相当）</li>
+            <li><span class="kl kl-purple" aria-hidden="true"></span><b>紫</b>：危険（警戒レベル4相当）<em>危険な場所から全員避難</em></li>
+            <li><span class="kl kl-red" aria-hidden="true"></span><b>赤</b>：警戒（警戒レベル3相当）<em>高齢者等は避難</em></li>
+            <li><span class="kl kl-yellow" aria-hidden="true"></span><b>黄</b>：注意（警戒レベル2相当）</li>
+          </ul>
+          <p class="kl-note">「黒」になるのを待たず、<b>「紫」の段階までに避難</b>を完了しましょう。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. 避難するとき ============ -->
+<section class="section" id="evacuate" aria-labelledby="evacuate-title">
+  <div class="container">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-walk"/></svg>避難するとき</p>
+    <h2 id="evacuate-title" class="sec-title">危険になる前に<br class="br-sp">避難する</h2>
+    <ul class="before-grid">
+      <li><span class="bg-icon"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></span><b>暗くなる</b>前</li>
+      <li><span class="bg-icon"><svg class="ic" aria-hidden="true"><use href="#i-flood"/></svg></span><b>道路が冠水する</b>前</li>
+      <li><span class="bg-icon"><svg class="ic" aria-hidden="true"><use href="#i-rise"/></svg></span><b>川が増水する</b>前</li>
+      <li><span class="bg-icon"><svg class="ic" aria-hidden="true"><use href="#i-wind"/></svg></span><b>風が強くなる</b>前</li>
+      <li><span class="bg-icon"><svg class="ic" aria-hidden="true"><use href="#i-slide"/></svg></span><b>土砂災害の危険が高まる</b>前</li>
+    </ul>
+    <div class="alert alert-caution">
+      <svg class="ic alert-icon" aria-hidden="true"><use href="#i-cane"/></svg>
+      <div>
+        <p class="alert-title">避難に時間がかかる人がいるご家庭は、特に早めに</p>
+        <p>高齢の方、乳幼児、障がいのある方などがいる家庭では、<b>「警戒レベル3 高齢者等避難」</b>が出た段階で避難を始めましょう。</p>
+      </div>
+    </div>
+
+    <h3 class="sub-title">警戒レベルと、とるべき行動</h3>
+    <div class="level-table" role="table" aria-label="警戒レベルととるべき行動">
+      <div class="lv-row lv-head" role="row">
+        <span role="columnheader">レベル</span><span role="columnheader">自治体の避難情報</span><span role="columnheader">気象庁の情報（例）</span>
+      </div>
+      <div class="lv-row lv5" role="row">
+        <span role="rowheader" class="lv-no">5</span>
+        <span role="cell"><b>緊急安全確保</b><small>すでに災害が起きている・迫っている。命を守る行動を</small></span>
+        <span role="cell">大雨特別警報／氾濫特別警報 など</span>
+      </div>
+      <div class="lv-line" aria-hidden="true">▲ 警戒レベル4までに必ず避難！</div>
+      <div class="lv-row lv4" role="row">
+        <span role="rowheader" class="lv-no">4</span>
+        <span role="cell"><b>避難指示</b><small>危険な場所から全員避難</small></span>
+        <span role="cell">大雨危険警報／氾濫危険警報／土砂災害危険警報 など</span>
+      </div>
+      <div class="lv-row lv3" role="row">
+        <span role="rowheader" class="lv-no">3</span>
+        <span role="cell"><b>高齢者等避難</b><small>高齢者など避難に時間がかかる人は避難。ほかの人も準備</small></span>
+        <span role="cell">大雨警報／氾濫警報／土砂災害警報 など</span>
+      </div>
+      <div class="lv-row lv2" role="row">
+        <span role="rowheader" class="lv-no">2</span>
+        <span role="cell"><b>—</b><small>ハザードマップなどで避難先・避難経路を確認</small></span>
+        <span role="cell">大雨注意報 など</span>
+      </div>
+      <div class="lv-row lv1" role="row">
+        <span role="rowheader" class="lv-no">1</span>
+        <span role="cell"><b>—</b><small>災害への心構えを高める</small></span>
+        <span role="cell">早期注意情報</span>
+      </div>
+    </div>
+    <p class="note">※気象庁の防災気象情報は、2026年5月から「レベル4 ○○危険警報」の新設など、警戒レベルの数字が付いた名称に変わりました。詳しくは<a href="https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/index.html" target="_blank" rel="noopener">気象庁「新たな防災気象情報について」</a>をご確認ください。自治体の避難情報は、気象庁の情報などをもとに市区町村が発令します。</p>
+
+    <div class="info-card">
+      <h3><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>避難先は避難所だけではありません</h3>
+      <p>安全な場所に住む親戚・知人の家、ホテルなども避難先になります。ハザードマップで自宅が安全と確認でき、浸水しない高さにいられる場合などは、<b>自宅の上の階にとどまる</b>（屋内安全確保）ことも選択肢です。ただし、土砂災害の危険がある場所や、浸水が長く続くおそれのある場所などでは、自宅外へ避難しましょう。</p>
+    </div>
+
+    <p class="key-msg key-strong">避難情報が出てから準備するのではなく、<br><em>避難情報が出る前から準備しておく。</em></p>
+  </div>
+</section>
+
+<!-- ============ 15. 5つの約束 ============ -->
+<section class="promise" id="promise" aria-labelledby="promise-title">
+  <div class="rain rain-soft" aria-hidden="true"></div>
+  <div class="container">
+    <h2 id="promise-title" class="promise-title"><span>命を守るための</span>5つの約束</h2>
+    <ol class="promise-list">
+      <li><span class="pn">1</span><span>川・海・崖を<b>見に行かない</b></span></li>
+      <li><span class="pn">2</span><span>冠水した道路に<b>入らない</b></span></li>
+      <li><span class="pn">3</span><span>アンダーパスに<b>入らない</b></span></li>
+      <li><span class="pn">4</span><span>最新の防災情報を<b>確認する</b></span></li>
+      <li><span class="pn">5</span><span>危険になる前に<b>避難する</b></span></li>
+    </ol>
+    <p class="promise-key">大切なのは、<br><em>“自分だけは大丈夫”</em>と<br class="br-sp">思わないこと。</p>
+    <p class="promise-sub">自分と、大切な家族の命を守るために。<br>今日からできる備えを始めましょう。</p>
+  </div>
+</section>
+
+<!-- ============ 16. 組合からのメッセージ ============ -->
+<section class="section union" id="message" aria-labelledby="message-title">
+  <div class="container narrow">
+    <h2 id="message-title" class="sec-title sec-title-sm"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>組合からのメッセージ</h2>
+    <div class="union-card">
+      <p>組合員の皆さんとご家族が、いつも安全に暮らせることが私たちの願いです。</p>
+      <p>災害はいつ、どこで起こるかわかりません。<br>大雨や台風が近づいてから慌てるのではなく、普段から自宅周辺の危険な場所や避難先について、ご家族と一緒に確認しておきましょう。</p>
+      <p>自分と、大切な人の命を守るために。<br>早めの準備と早めの行動をお願いします。</p>
+      <div class="union-sign">
+        <img class="logo-img" src="images/union-logo.webp" alt="大和冷機労働組合のロゴ（DRU）" width="80" height="80">
+        <p class="union-name">大和冷機労働組合</p>
+      </div>
+    </div>
+
+    <div class="share-box">
+      <button type="button" class="btn btn-share btn-xl btn-block" id="shareBtn">
+        <svg class="ic" aria-hidden="true"><use href="#i-share"/></svg>家族にもこのページを共有する
+      </button>
+      <div class="share-fallback" id="shareFallback" hidden>
+        <a class="btn btn-line" id="lineShare" href="#" target="_blank" rel="noopener">LINEで送る</a>
+        <button type="button" class="btn btn-outline" id="copyBtn">URLをコピー</button>
+      </div>
+      <p class="share-status" id="shareStatus" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container narrow">
+    <p class="disclaimer">掲載内容は一般的な防災情報です。実際の災害時には、気象庁・国土交通省・自治体等が発表する最新情報を確認し、自治体から避難指示等が発令された場合はその指示に従ってください。</p>
+    <details class="sources">
+      <summary>参考にした公的情報・関連リンク</summary>
+      <ul>
+        <li><a href="https://www.jma.go.jp/jma/kishou/know/bosai/riskmap.html" target="_blank" rel="noopener">気象庁「キキクル（危険度分布）」</a></li>
+        <li><a href="https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/index.html" target="_blank" rel="noopener">気象庁「新たな防災気象情報について（令和8年～）」</a></li>
+        <li><a href="https://www.jma.go.jp/bosai/" target="_blank" rel="noopener">気象庁「防災情報」</a></li>
+        <li><a href="https://www.bousai.go.jp/oukyu/hinanjouhou/r3_hinanjouhou_guideline/" target="_blank" rel="noopener">内閣府 防災情報「避難情報に関するガイドライン」</a></li>
+        <li><a href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener">国土交通省「ハザードマップポータルサイト」</a></li>
+        <li><a href="https://www.river.go.jp/" target="_blank" rel="noopener">国土交通省「川の防災情報」</a></li>
+        <li><a href="https://jaf.or.jp/" target="_blank" rel="noopener">JAF（一般社団法人 日本自動車連盟）</a></li>
+        <li>お住まいの市区町村の防災ページ・ハザードマップ</li>
+      </ul>
+    </details>
+    <div class="footer-org">
+      <img class="logo-img" src="images/union-logo.webp" alt="" width="56" height="56" loading="lazy">
+      <span>大和冷機労働組合</span>
+    </div>
+    <p class="copyright">&copy; 大和冷機労働組合</p>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="ページの先頭へ戻る"><svg class="ic" aria-hidden="true"><use href="#i-up"/></svg></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
