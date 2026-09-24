@@ -98,6 +98,9 @@ button { font: inherit; }
 .container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 .container.narrow { max-width: 760px; }
 .center { text-align: center; }
+/* 日本語の文節で折り返す（1〜2文字だけ次の行に残るのを防ぐ） */
+.wb { display: inline-block; }
+.sec-title, .key-msg, .mega-msg, .promise-key, .danger-card, .alert-title, .check-msg { text-wrap: balance; }
 .br-sp { display: inline; }
 @media (min-width: 768px) { .br-sp { display: none; } }
 
@@ -171,13 +174,19 @@ button { font: inherit; }
   position: fixed; inset: 0; z-index: 90; background: rgba(0, 0, 0, .35);
 }
 
+/* スマホ：組合名を1行で表示できるよう、ヘッダー要素をコンパクトに */
 .brand-text { white-space: nowrap; }
-@media (max-width: 359px) {
+@media (max-width: 419px) {
+  .header-inner { gap: 6px; padding: 0 8px 0 10px; }
   .brand { font-size: 12px; gap: 6px; }
-  .brand .logo-img { width: 36px; height: 36px; }
-  .btn-kikikuru-head { padding: 0 10px; font-size: 13px; }
+  .brand .logo-img { width: 34px; height: 34px; }
+  .btn-kikikuru-head { padding: 0 10px; font-size: 13px; gap: 3px; }
+  .menu-btn { width: 46px; }
 }
-@media (min-width: 400px) {
+@media (max-width: 349px) {
+  .head-kiki-more { display: none; }
+}
+@media (min-width: 420px) {
   .brand { font-size: 14px; }
 }
 @media (min-width: 768px) {
@@ -432,7 +441,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .alert-caution .alert-icon, .alert-caution .alert-title { color: var(--orange-700); }
 
 /* ---------- Landslide signs ---------- */
-.sign-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sign-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 520px) { .sign-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 768px) { .sign-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; } }
 .sign-grid li {
   display: flex; align-items: center; gap: 10px;
@@ -604,8 +614,9 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .kl-title { font-weight: 800; color: var(--navy-800); margin-bottom: 8px; }
 .kiki-legend ul { display: grid; gap: 6px; font-size: 15px; line-height: 1.5; }
-.kiki-legend li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
-.kiki-legend em { font-size: 13px; color: var(--muted); width: 100%; padding-left: 30px; }
+.kiki-legend li { display: flex; align-items: flex-start; gap: 8px; }
+.kiki-legend .kl { margin-top: 1px; }
+.kiki-legend em { display: block; font-size: 13px; color: var(--muted); }
 .kl { width: 22px; height: 22px; border-radius: 6px; border: 1px solid #999; flex-shrink: 0; }
 .kl-black { background: #0c000c; }
 .kl-purple { background: #aa00aa; }
